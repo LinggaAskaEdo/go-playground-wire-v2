@@ -1,0 +1,34 @@
+token: 
+  auth: "4%[$6EhwEaTbL2>tA=4?nU6>aW5La8n9#"
+  
+database:
+  mysql:
+    mysqlUser: "root"
+    mysqlPassword: "a5k4CooL"
+    mysqlHost: "localhost"
+    mysqlPort: "3306"
+    mysqlName: "play-db"
+    mysqlMaxIdleConns: 5
+    mysqlMaxOpenConns: 20
+    mysqlConnMaxLifetime: 60
+    mysqlConnMaxIdleTime: 10
+
+cache:
+  redis:
+    redisHost: "localhost"
+    redisPort: "6379"
+    redisPassword: ""
+
+server:
+  serverHost: "localhost"
+  serverPort: "3000"
+
+handler:
+  scheduler:
+    schedulerNewsEnable: true
+    schedulerNewsTimeInSec: 30
+
+business:
+  usecase:
+    news:
+      rssURL: "https://jambi.antaranews.com/rss/terkini.xml"
